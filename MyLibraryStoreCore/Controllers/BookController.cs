@@ -63,5 +63,9 @@ namespace MyLibraryStoreCore.Controllers
             _bookRepos.DeleteBook(id);
             return RedirectToAction("Index", "Book");
         }
+        public IActionResult NewAction()
+        {
+            return View();
+        }
     }
 }
